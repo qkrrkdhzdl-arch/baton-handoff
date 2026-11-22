@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Baton — Handoff Brief</title>
+<meta name="description" content="Baton for Jira collects no data, stores no data and sends nothing outside Atlassian. Read what the app can access and why.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark">B</span><span class="name">Baton — Handoff Brief</span></a>
+    <nav class="site" aria-label="Site">
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Baton — Handoff Brief, a Jira app by Gaon Lab</p>
+    <p class="updated">Effective 23 November 2026 · Last updated 23 November 2026</p>
+
+    <p class="lede">Baton does not collect your data. It reads a Jira issue inside your own Atlassian site, builds a brief from it, and keeps nothing. There is no database, no analytics and no request to any server we operate — because we operate none.</p>
+
+    <h2>1. Who we are</h2>
+    <p>Baton is published by <strong>Gaon Lab</strong>, Busan, Republic of Korea ("we", "us"). For any question about this policy, write to <a href="mailto:qkrrkdhzdl@gmail.com">qkrrkdhzdl@gmail.com</a>.</p>
+
+    <h2>2. What Baton can access</h2>
+    <p>Baton runs as an app inside your Atlassian cloud site. When someone opens the Baton panel on a Jira issue, or the Baton handoff inbox, the app reads the following through Atlassian's own APIs:</p>
+    <table>
+      <tr><th>Data</th><th>Purpose</th></tr>
+      <tr><td>Issue fields: key, summary, type, status, priority, assignee, reporter, labels, dates</td><td>Describe where the work stands and how it is moving.</td></tr>
+      <tr><td>Comments: body text, author display name, timestamp</td><td>Quote decisions, blockers, open questions and promised next steps.</td></tr>
+      <tr><td>Issue history (changelog): assignee changes and their author</td><td>Show how many times the work changed hands, and between whom.</td></tr>
+      <tr><td>Remote links and linked pages</td><td>List the context a newcomer would need.</td></tr>
+    </table>
+
+    <p>Baton requests exactly three Jira scopes: <code>read:jira-work</code>, <code>read:jira-user</code> and <code>write:jira-work</code>. It does not request access to Confluence content beyond link titles that Jira already returns, and it does not request access to any other Atlassian product.</p>
+
+    <h2>3. How access is limited</h2>
+    <p>Every request Baton makes is executed <strong>as the person using it</strong> (<code>asUser()</code> in Atlassian Forge), not as an administrator or a service identity. Jira's own permission scheme therefore decides what Baton can see: if you cannot open an issue in Jira, Baton cannot read it for you either. Baton never widens anyone's access.</p>
+
+    <h2>4. What Baton does with the data</h2>
+    <p>Data is used for one purpose only: rendering the brief or the inbox on your screen. Processing happens inside Atlassian's Forge runtime, in the region of your Atlassian site, for the duration of the request.</p>
+    <ul>
+      <li><strong>No storage.</strong> Baton keeps no database, no cache, no log of issue content and no copy of comments. Nothing survives the request that produced it.</li>
+      <li><strong>No external transfer.</strong> The app makes no outbound network requests. No issue text, comment, user name or identifier is sent to us or to any third party.</li>
+      <li><strong>No AI processing.</strong> The brief is produced by deterministic, inspectable rules — sentence classification, counting and quotation. No issue content is sent to a language model or any other AI service.</li>
+      <li><strong>No tracking.</strong> Baton sets no cookies, runs no analytics or telemetry, shows no advertising, and does not profile anyone.</li>
+    </ul>
+
+    <h2>5. When Baton writes to Jira</h2>
+    <p>Baton writes to your site in one situation: when a person clicks <em>Post brief as comment</em>. That action creates a comment on the issue under that person's own name, exactly as if they had typed it. From that moment the comment is ordinary Jira content, governed by your organisation's Atlassian settings and retention rules, not by us. Baton does not edit, delete or move anything else.</p>
+
+    <h2>6. Sharing and sale</h2>
+    <p>We do not sell, rent, share or disclose personal data, because we do not receive any. There are no sub-processors apart from Atlassian itself, which hosts the Forge platform your site already uses under your own agreement with Atlassian.</p>
+
+    <h2>7. Retention and deletion</h2>
+    <p>Baton retains nothing, so there is nothing for us to delete. If you uninstall the app, it stops running immediately. Comments it posted at a user's request remain in Jira until someone removes them, as with any other comment; deleting them is done in Jira by someone with permission to do so. Data your organisation keeps in Jira is retained under your organisation's own policies and Atlassian's terms.</p>
+
+    <h2>8. Security</h2>
+    <p>Baton has no infrastructure of its own to secure: it runs on Atlassian's Forge platform, inherits Atlassian's encryption, isolation and access controls, and holds no credentials. Its source is small and its permission set is the minimum the feature needs. If you believe you have found a security issue, please write to <a href="mailto:qkrrkdhzdl@gmail.com">qkrrkdhzdl@gmail.com</a> and we will respond as quickly as we can.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Privacy laws such as the GDPR and Korea's Personal Information Protection Act give people rights to access, correct, delete and port their personal data, and to object to its processing. Because Baton holds no personal data, we cannot produce, correct or delete records we never received. Requests about Jira content — including comments, names and history — should go to the administrator of your Atlassian site, who controls that data, or to Atlassian. We will still answer any question you send us about how the app works.</p>
+
+    <h2>10. Children</h2>
+    <p>Baton is a workplace tool for Jira users and is not directed to children. It is not intended for use by anyone under 16.</p>
+
+    <h2>11. International transfers</h2>
+    <p>We do not transfer data across borders, because no data reaches us. Atlassian's handling of your site's data, including its storage location, is described in Atlassian's own privacy policy and your agreement with them.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>If the app's behaviour changes in a way that affects this policy — for example, if a future version stores a preference or calls an external service — this page will be updated before that version is released, and the date at the top will change. Continuing to use the app after an update means you accept the updated policy.</p>
+
+    <h2>13. Contact</h2>
+    <p>Gaon Lab · Busan, Republic of Korea<br>
+    <a href="mailto:qkrrkdhzdl@gmail.com">qkrrkdhzdl@gmail.com</a></p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Gaon Lab</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of service</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:qkrrkdhzdl@gmail.com">qkrrkdhzdl@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>

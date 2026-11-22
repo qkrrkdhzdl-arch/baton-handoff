@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Baton — Handoff Brief</title>
+<meta name="description" content="How to get help with Baton for Jira: contact, response time, what to include, and how to uninstall.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="mark">B</span><span class="name">Baton — Handoff Brief</span></a>
+    <nav class="site" aria-label="Site">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html" aria-current="page">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Support</h1>
+    <p class="subtitle">Baton — Handoff Brief, a Jira app by Gaon Lab</p>
+
+    <div class="card">
+      <h2 style="font-size:18px">Contact</h2>
+      <p style="margin-bottom:6px"><a href="mailto:qkrrkdhzdl@gmail.com?subject=Baton%20support">qkrrkdhzdl@gmail.com</a></p>
+      <p style="margin-bottom:0;color:#596773;font-size:14px">We answer support mail within two business days (Korea Standard Time, UTC+9). Bug reports and feature requests are welcome in the same mailbox.</p>
+    </div>
+
+    <h2>What to include</h2>
+    <p>A short note with these details lets us reproduce the problem in one pass:</p>
+    <ul>
+      <li>Your Atlassian site URL, for example <code>yourteam.atlassian.net</code>.</li>
+      <li>The issue key you were looking at, for example <code>KAN-4</code>, and which surface was open: the issue panel or the handoff inbox.</li>
+      <li>What you expected, what happened instead, and the exact message shown on screen.</li>
+      <li>A screenshot, if the problem is visual — please crop out anything confidential you would not normally share.</li>
+      <li>The approximate time it happened, including your timezone.</li>
+    </ul>
+
+    <h2>Common questions</h2>
+
+    <h3>The panel says the brief could not be built</h3>
+    <p>This is usually a permission matter: the app runs as you, so it can only read issues you can open in Jira. Check that you can view the issue and its comments directly in Jira, then press <em>Try again</em> in the panel. If you can see the issue but Baton cannot, write to us with the issue key.</p>
+
+    <h3>Nothing appears in the handoff inbox</h3>
+    <p>The inbox lists issues whose assignee changed in the last 14 days, across the whole site. An empty inbox means nothing was reassigned in that window — or that your Jira permission scheme hides those issues from you. An issue also leaves the list once it is more than 14 days old, even if it is still worth a look.</p>
+
+    <h3>A decision or blocker is missing from the brief</h3>
+    <p>Baton quotes sentences that read like a decision, a blocker, a question or a promised next step; wording it does not recognise is not quoted. If you send us the issue key and the sentence, we will look at widening the rule. A posted brief is never quoted back into a later brief, so the app cannot inherit its own words.</p>
+
+    <h3>Can I edit a brief before it is posted?</h3>
+    <p>Not in this version. The comment is posted exactly as the panel shows it, under your name. You can edit or delete it afterwards in Jira like any other comment. If you would rather not post, the brief stays on screen without writing anything.</p>
+
+    <h3>Does Baton send my issue text anywhere?</h3>
+    <p>No. The app makes no outbound requests and uses no AI service; it analyses the issue inside Atlassian's Forge runtime and stores nothing. See the <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2>Installing and uninstalling</h2>
+    <h3>Install</h3>
+    <p>Open the app's Marketplace listing from your Atlassian site and press <em>Get app</em>. A Jira administrator approves the install and its three permissions: <code>read:jira-work</code>, <code>read:jira-user</code> and <code>write:jira-work</code>. The panel then appears on every issue, and <em>Baton — Handoff inbox</em> appears in Jira's app navigation.</p>
+
+    <h3>Uninstall</h3>
+    <p>In Jira, go to <em>Settings → Apps → Manage apps</em>, find <em>Baton — Handoff Brief</em> and choose <em>Uninstall</em>. The panel and inbox disappear at once. Comments the app posted stay in their issues until someone removes them, as with any comment.</p>
+
+    <h2>Reporting a security issue</h2>
+    <p>Please write to <a href="mailto:qkrrkdhzdl@gmail.com?subject=Baton%20security">qkrrkdhzdl@gmail.com</a> with the subject line "Baton security" and enough detail to reproduce the issue. We will confirm receipt and keep you informed until it is resolved. Please give us a chance to fix it before disclosing it publicly.</p>
+
+    <h2>About</h2>
+    <p>Baton is built by Gaon Lab, Busan, Republic of Korea, and entered in Atlassian's Codegeist 2026 hackathon (category: Apps for Software Teams). <a href="./">What the app does</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Gaon Lab</span>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of service</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:qkrrkdhzdl@gmail.com">qkrrkdhzdl@gmail.com</a>
+  </div>
+</footer>
+
+</body>
+</html>
